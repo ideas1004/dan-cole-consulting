@@ -29,3 +29,29 @@ html:not([lang=en]) .hero-photo-note p{font-family:var(--heading-font);font-size
 @media(min-width:1600px){.field-notes{padding-left:calc((100vw - 1290px)/2);padding-right:calc((100vw - 1290px)/2)}}
 @media(max-width:1000px){.hero{grid-template-columns:1fr 1fr;gap:4%}.hero-bottom{gap:10px}.field-grid{grid-template-columns:1fr 1fr}.field-grid>.field-photo:first-child{grid-column:1/-1;width:80%}.photo-chapter:nth-child(odd) .field-grid>.field-photo:first-child{margin-left:auto}.global-gallery{grid-template-columns:1fr 1fr}.global-gallery .students-photo{grid-column:1/-1}}
 @media(max-width:650px){header{margin-bottom:0}.hero{display:flex;gap:28px;padding-bottom:35px}.hero-image{width:100%;min-height:0;padding:9px}.hero-copy{width:100%}.hero-bottom{margin-top:28px}.hero-photo-note{padding:20px 12px 14px}.hero-photo-note p{font-size:29px}.field-grid{gap:25px;grid-template-columns:1fr}.field-grid>.field-photo:first-child{width:100%;grid-column:auto}.photo-chapter{margin-top:40px}.chapter-heading{gap:16px;margin-bottom:22px}.chapter-heading h3,html:not([lang=en]) .chapter-heading h3{font-size:24px}.chapter-heading p{font-size:14px}.field-photo figcaption{font-size:13px}.community-memory{max-width:85%}.global-gallery{gap:22px 15px}.viewer-toolbar,.viewer-bottom{padding:12px}.viewer-caption{font-size:12px}.photo-dialog{width:96vw;max-width:96vw}}
+
+/* Student-first opening: full photograph, quiet editorial typography. */
+header{margin-bottom:0;padding-top:22px;padding-bottom:22px}
+.hero{max-width:1600px;padding:30px 5% 52px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:0;align-items:stretch}
+.hero-image{grid-column:1;grid-row:1;padding:0;background:#e5e6dc;align-self:stretch;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.hero-image .field-photo{width:100%}
+.hero-image img{display:block;width:100%;height:auto;position:static;object-fit:contain}
+.hero-photo-note{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 28px;background:#ecece3}
+.hero-photo-note>span{font-size:9px;letter-spacing:.16em;max-width:100px}
+.hero-photo-note p{font-size:25px;margin:0;line-height:1.25}
+.hero-photo-note .text-link{display:none}
+.hero-copy{grid-column:2;grid-row:1;background:#142e2d;color:#f8f7f2;padding:clamp(30px,4vw,64px);justify-content:center;container-type:inline-size}
+.hero .eyebrow{color:#d5bd93;font-size:9px;letter-spacing:.16em;margin-bottom:30px;line-height:1.9}
+html[lang=en] .hero h1{font-size:clamp(2.6rem,16cqi,5.3rem);line-height:1.08;letter-spacing:-.035em}
+.hero .title-accent{color:#d4bb8f}
+.hero .intro{color:#c4cec7;font-size:15px;line-height:1.85;margin:25px 0 28px;max-width:34em}
+.hero .button{background:#e9dec8;color:#142e2d;font-size:12px;padding:14px 20px;gap:24px}
+.hero .button:hover{background:#f8f0e1}.hero .button span{color:#685231}
+.hero-bottom{border-color:#48605b;margin-top:32px;padding:18px 0 0;color:#c3cbc3;font-size:8px;letter-spacing:.14em;gap:12px;flex-direction:column}
+html:not([lang=en]) .hero h1{font-size:clamp(1.65rem,8.5cqi,3rem);line-height:1.7;letter-spacing:-.025em}
+html[lang=zh-Hans] .hero h1{font-size:clamp(2rem,11cqi,3.5rem);letter-spacing:.03em}
+html:not([lang=en]) .hero .eyebrow{font-size:10px;margin-bottom:26px}
+html:not([lang=en]) .hero-photo-note p{font-size:18px;line-height:1.6}
+html:not([lang=en]) .hero-bottom{font-size:10px}
+@media(max-width:1000px){.hero{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);padding:22px 4% 40px}.hero-copy{padding:28px}.hero-photo-note{padding:20px;display:block}.hero-photo-note>span{max-width:none}.hero-photo-note p{margin-top:8px}.hero .intro{font-size:14px}.hero .eyebrow{font-size:8px}}
+@media(max-width:650px){header{padding:18px 6%}.hero{display:flex;flex-direction:column;padding:15px 5% 30px;gap:0}.hero-image{order:-1;width:100%;padding:0}.hero-photo-note{display:none}.hero-copy,html:not([lang=en]) .hero-copy{padding:30px 26px 28px;width:100%}.hero .eyebrow,html:not([lang=en]) .hero .eyebrow{margin-bottom:18px;font-size:9px;max-width:none}html[lang=en] .hero h1{font-size:clamp(2.6rem,13cqi,4rem);line-height:1.08}html:not([lang=en]) .hero h1{font-size:clamp(1.6rem,8.1cqi,2.5rem);line-height:1.65}html[lang=zh-Hans] .hero h1{font-size:clamp(2rem,10cqi,3rem)}.hero .intro{font-size:14px;line-height:1.8;margin:20px 0 22px}.hero-bottom{margin-top:25px;flex-direction:row;flex-wrap:wrap;font-size:8px;gap:8px 18px}.hero .button{padding:12px 18px}.audience{padding-top:20px}}
