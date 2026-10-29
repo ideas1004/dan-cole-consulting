@@ -10,7 +10,7 @@
     const source = buttons[active].querySelector('img');
     image.src = source.src;
     image.alt = source.alt;
-    dialog.querySelector('.viewer-caption').textContent = source.alt;
+    dialog.querySelector('.viewer-caption').textContent = buttons[active].closest('figure')?.querySelector('figcaption')?.textContent || source.alt;
     dialog.querySelector('.viewer-count').textContent = `${String(active + 1).padStart(2, '0')} / ${buttons.length}`;
   }
   buttons.forEach((button, index) => button.addEventListener('click', () => {
