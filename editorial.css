@@ -1,0 +1,31 @@
+/* An editorial frame for authentic, uncropped field photography. */
+header{border-bottom:1px solid var(--line);margin-bottom:26px}
+.hero{grid-template-columns:1fr 1.25fr;gap:5%;align-items:center;padding-bottom:54px}
+.hero-copy{padding-top:20px}.hero .intro{max-width:420px}.hero-bottom{margin-top:38px;flex-wrap:wrap}
+.hero-image{min-height:0;overflow:visible;align-self:center;background:#eeede4;padding:14px}
+.hero-image:after{display:none}.hero-image img{position:static;width:100%;height:auto;object-fit:contain}
+.hero-image .field-photo{margin:0}.hero-image figcaption{display:none}
+.hero-photo-note{padding:25px 16px 15px}.hero-photo-note>span{font-size:10px;letter-spacing:.18em;color:var(--muted)}
+.hero-photo-note p{font-family:'Libre Caslon Display',Georgia,serif;font-size:32px;line-height:1.25;margin:12px 0 0}
+html:not([lang=en]) .hero-photo-note p{font-family:var(--heading-font);font-size:23px;line-height:1.65}
+.hero-photo-note .text-link{font-size:12px;margin-top:18px;gap:15px}
+.global-gallery{grid-template-columns:1.5fr .75fr .75fr;align-items:start;gap:24px}
+.global-gallery img,.global-gallery .students-photo img{height:auto;max-height:none;object-fit:contain}
+.field-notes{background:#eeede4;max-width:none;border-top:1px solid #ddded2}
+.field-notes>.section-heading,.photo-chapter{max-width:1290px;margin-left:auto;margin-right:auto}
+.field-notes .section-heading>p{max-width:340px}.photo-chapter{margin-top:64px}
+.chapter-heading{display:flex;gap:24px;align-items:baseline;border-top:1px solid #cbd0c4;padding-top:24px;margin-bottom:28px}
+.chapter-no{font-size:12px;color:#80683e;letter-spacing:.12em}.chapter-heading h3{margin:0;font-size:31px}.chapter-heading p{font-size:14px;color:var(--muted);margin:9px 0 0}
+.field-grid{display:grid;grid-template-columns:1.18fr 1fr 1fr;gap:24px;align-items:start}
+.field-photo{margin:0;min-width:0}.photo-open{display:block;width:100%;position:relative;border:0;padding:0;background:var(--ink);cursor:zoom-in;color:white}
+.field-photo img{display:block;width:100%;height:auto;object-fit:contain}.photo-expand{position:absolute;bottom:12px;right:12px;width:32px;height:32px;display:grid;place-items:center;background:#142e2de6;font-size:19px;border:1px solid #ffffff70;transition:background .2s}
+.photo-open:hover .photo-expand{background:#8a6c3e}.photo-open:focus-visible,button:focus-visible{outline:3px solid #a77a37;outline-offset:5px}
+.field-photo figcaption{font-size:12px;color:var(--muted);line-height:1.65;padding-top:12px}
+.community-memory{margin-top:24px;max-width:65%;margin-left:auto}.relationship-photo{align-self:start}
+.photo-dialog{background:#102522;color:#fff;border:1px solid #56706a;padding:0;width:min(1200px,94vw);max-width:94vw;max-height:94dvh;overflow:auto}
+.photo-dialog::backdrop{background:#071612ed}.viewer-toolbar,.viewer-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 20px}
+.viewer-count{font-size:12px;letter-spacing:.1em;color:#d5bd93}.photo-dialog button{background:transparent;color:white;border:1px solid #6a7e76;min-width:44px;height:44px;font-size:24px;cursor:pointer}
+.viewer-image{display:block;width:100%;height:auto;max-height:70dvh;object-fit:contain}.viewer-caption{font-size:14px;text-align:center;margin:0}.viewer-bottom{padding-bottom:20px}
+@media(min-width:1600px){.field-notes{padding-left:calc((100vw - 1290px)/2);padding-right:calc((100vw - 1290px)/2)}}
+@media(max-width:1000px){.hero{grid-template-columns:1fr 1fr;gap:4%}.hero-bottom{gap:10px}.field-grid{grid-template-columns:1fr 1fr}.field-grid>.field-photo:first-child{grid-column:1/-1;width:80%}.photo-chapter:nth-child(odd) .field-grid>.field-photo:first-child{margin-left:auto}.global-gallery{grid-template-columns:1fr 1fr}.global-gallery .students-photo{grid-column:1/-1}}
+@media(max-width:650px){header{margin-bottom:0}.hero{display:flex;gap:28px;padding-bottom:35px}.hero-image{width:100%;min-height:0;padding:9px}.hero-copy{width:100%}.hero-bottom{margin-top:28px}.hero-photo-note{padding:20px 12px 14px}.hero-photo-note p{font-size:29px}.field-grid{gap:25px;grid-template-columns:1fr}.field-grid>.field-photo:first-child{width:100%;grid-column:auto}.photo-chapter{margin-top:40px}.chapter-heading{gap:16px;margin-bottom:22px}.chapter-heading h3,html:not([lang=en]) .chapter-heading h3{font-size:24px}.chapter-heading p{font-size:14px}.field-photo figcaption{font-size:13px}.community-memory{max-width:85%}.global-gallery{gap:22px 15px}.viewer-toolbar,.viewer-bottom{padding:12px}.viewer-caption{font-size:12px}.photo-dialog{width:96vw;max-width:96vw}}
